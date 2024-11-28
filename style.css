@@ -1,0 +1,207 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.hero {
+  background: url("https://via.placeholder.com/1920x600") no-repeat center
+    center;
+  background-size: cover;
+  color: white;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.section {
+  padding: 60px 0;
+}
+
+.service-container,
+.featured-container,
+.testimonial-container,
+.blog-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card,
+.featured-card {
+  margin: 15px;
+  width: 300px;
+  text-align: center;
+  border: none;
+}
+
+.step {
+  text-align: center;
+  margin: 20px;
+}
+
+footer {
+  background: #343a40;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+#map {
+  height: 600px;
+  width: 100%;
+}
+
+.navbar {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+}
+
+.nav-link {
+  position: relative;
+  padding: 0.5rem 1rem;
+  margin: 0 0.2rem;
+  transition: color 0.3s ease;
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  color: #0d6efd;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 50%;
+  background-color: #0d6efd;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+.btn {
+  padding: 0.5rem 1.5rem;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-primary:hover {
+  background-color: #0d6efd;
+  color: white;
+  transform: translateY(-1px);
+}
+
+.btn-primary {
+  box-shadow: 0 4px 15px rgba(13, 110, 253, 0.2);
+}
+
+.btn-primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(13, 110, 253, 0.3);
+}
+
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    padding: 1rem 0;
+  }
+
+  .nav-item {
+    margin: 0.5rem 0;
+  }
+}
+
+#como-funciona .card {
+  transition: transform 0.3s ease-in-out;
+}
+
+#como-funciona .card:hover {
+  transform: translateY(-10px);
+}
+
+#como-funciona .icon-wrapper {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  background-color: rgba(0, 123, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+#como-funciona .card:nth-child(2) .icon-wrapper {
+  background-color: rgba(40, 167, 69, 0.1);
+}
+
+#como-funciona .card:nth-child(3) .icon-wrapper {
+  background-color: rgba(23, 162, 184, 0.1);
+}
+
+#como-funciona .card:nth-child(4) .icon-wrapper {
+  background-color: rgba(255, 193, 7, 0.1);
+}
+
+#mapa .card {
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+#mapa .card-footer {
+  border-top: none;
+}
+
+.leaflet-control-geosearch form {
+  background: #f8f9fa;
+  border: none;
+  border-radius: 25px;
+}
+
+.leaflet-control-geosearch form input {
+  border-radius: 25px 0 0 25px;
+}
+
+.leaflet-control-geosearch form button {
+  border-radius: 0 25px 25px 0;
+}
+#publicida {
+  position: relative;
+  z-index: 100; /* Aumenté el valor para asegurarnos de que se superponga correctamente */
+  display: block;
+}
+
+#publicida .card {
+  transition: transform 0.3s;
+}
+
+#publicida .card:hover {
+  transform: scale(1.05);
+}
+
+#publicida .card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+#destacados {
+  position: relative;
+  z-index: 100; /* Aumenté el valor para asegurarnos de que se superponga correctamente */
+  display: block;
+}
+
+#destacados .card {
+  transition: transform 0.3s;
+}
+
+#destacados .card:hover {
+  transform: scale(1.05);
+}
+/* 
+#destacados .card-img-top {
+  height: 200px;
+  object-fit: cover;
+} */
